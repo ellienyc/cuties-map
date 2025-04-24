@@ -1,10 +1,12 @@
+/* all from ChrisWhong's code in class example */
+
 html,
 head,
 body,
 #main-container {
     height: 100%;
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
 }
 
 body {
@@ -66,6 +68,7 @@ nav {
     #map {
         height: 60%;
         flex-shrink: 0;
+        min-width: 0;
     }
 
     #sidebar {
@@ -73,35 +76,23 @@ nav {
     }
 }
 
-/* Copilot styles ideas
-html, body {
-    height: 100%;
-    margin: 0;
+/* legend styling from ChatGPT */
+#legend {
+    margin-top: 1rem;
 }
 
-#main-container {
-    height: 100vh;
+.legend-item {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
 }
 
-nav {
-    height: 50px;
-    background-color: #f4f4f4;
-    border-bottom: 1px solid #ccc;
+.legend-color {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    display: inline-block;
+    border: 1px solid #ccc;
 }
-
-#content-container {
-    flex-grow: 1;
-    display: flex;
-}
-
-#sidebar {
-    width: 300px;
-    background-color: #eaeaea;
-    overflow-y: auto;
-}
-
-#map {
-    flex-grow: 1;
-    background-color: #ddd; /* Placeholder for the map }*/ 
