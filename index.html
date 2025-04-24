@@ -4,28 +4,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.0/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.0/mapbox-gl.js"></script>
   <title>my petsitting map</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://api.mapbox.com/mapbox-gl-js/v3.11.0/mapbox-gl.css" rel="stylesheet">
 </head>
 
 <body>
-
- <div> <h1>dogs and cats around NYC</title></h1> </div>
+  <div id="main-container">
+    <nav>
+        <div class="title">dogs and cats around NYC</div>
+        <div class="nav-links">
+        </div>
  
- <div id="sidebar-container">
-    <div id="title">Ellie's pet sits</div>
-    <p>I'm a petsitter in NYC, here are some of my favorite dogs and cats. </p>
-    <p><strong>Click a marker to see what pet lives where.</strong></p>
-    <p>The markers are color-coded by type (i.e. dog or cat):</p>
-    <div id="legend">
-    </div>
-
+      </nav>
+      <div id="content-container">
+          <div id="sidebar">
+            <p>Ellie's pet sits</p>
+            <p>I'm a petsitter in NYC, here are some of my favorite dogs and cats. </p>
+            <p><strong>Click a marker to see what pet lives where.</strong></p>
+            <p>The markers are color-coded by type (i.e. dog or cat):</p>
+            <div id="legend">
+          </div>
+          <div id="map"></div>
+        </div>
 </div>
-</div>
 
-  <div id="map-container" </div>
+<div>
 
+  <div id="map" </div>
 
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.11.0/mapbox-gl.js"></script>
     <script src="data.js"></script>
