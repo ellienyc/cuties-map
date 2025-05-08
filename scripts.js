@@ -41,6 +41,22 @@ map.on('load', () => {
             'line-opacity': 1
         }
     });
+
+    map.addSource('subwayStops', {
+        type: 'geojson',
+        source: '/subway-stops.geojson'
+    });
+    map.addLayer({
+        'id': 'subwayStops',
+        'type': 'circle',
+        'source': 'subwayStops',
+        'paint': {
+            'circle-color': '#ffcc00', // yellow color for subway stops
+            'circle-radius': 4,
+            'circle-opacity': 0.8
+        }
+    });
+           
 });
 
 const markerOptions = {
